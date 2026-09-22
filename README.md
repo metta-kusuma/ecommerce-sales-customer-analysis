@@ -1,4 +1,4 @@
-# 🛒 Multi-Vendor E-Commerce Sales & Customer Retention Analysis
+#  Multi-Vendor E-Commerce Sales & Customer Retention Analysis
 
 ![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-1.5+-150458?style=for-the-badge&logo=pandas&logoColor=white)
@@ -7,7 +7,7 @@
 
 ---
 
-## 📌 Executive Summary
+##  Executive Summary
 
 Analisis ini mengolah dataset e-commerce staging sebanyak **100.000 transaksi** dari **700 merchant** dan **8.999 pelanggan** unik (periode Maret - September 2026). 
 
@@ -15,7 +15,7 @@ Tujuan utama proyek ini adalah mengevaluasi kinerja penjualan (**Gross Merchandi
 
 ---
 
-## 📊 Key Highlights & Metrics
+##  Key Highlights & Metrics
 
 | Metrik Bisnis | Nilai | Keterangan |
 | :--- | :--- | :--- |
@@ -28,7 +28,7 @@ Tujuan utama proyek ini adalah mengevaluasi kinerja penjualan (**Gross Merchandi
 
 ---
 
-## 🔍 Key Insights & Findings
+##  Key Insights & Findings
 
 ### 1. Revenue Drivers by Category
 * **Electronics** ($2,009,544.34) dan **Apparel & Fashion** ($2,004,865.71) merupakan pendorong utama pendapatan, menyumbang **>50% dari total GMV**.
@@ -52,7 +52,7 @@ Tujuan utama proyek ini adalah mengevaluasi kinerja penjualan (**Gross Merchandi
 
 ---
 
-## 🛠️ Tech Stack & Libraries
+##  Tech Stack & Libraries
 
 - **Language:** Python 3.x
 - **Data Manipulation:** `pandas`, `numpy`
@@ -61,7 +61,7 @@ Tujuan utama proyek ini adalah mengevaluasi kinerja penjualan (**Gross Merchandi
 
 ---
 
-## 💡 Strategic Business Recommendations
+##  Strategic Business Recommendations
 
 1. **SLA & Penalti Merchant (Menekan Cancel Rate):**
    * Sekitar **7.97% transaksi batal/refund**. Terapkan aturan batas waktu pemrosesan (*Service Level Agreement*) serta penalti stok bagi 700 merchant untuk menekan kebocoran GMV.
@@ -72,7 +72,7 @@ Tujuan utama proyek ini adalah mengevaluasi kinerja penjualan (**Gross Merchandi
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```text
 .

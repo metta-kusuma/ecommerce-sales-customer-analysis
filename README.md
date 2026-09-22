@@ -1,48 +1,81 @@
-Judul Proyek
+# 🛒 Multi-Vendor E-Commerce Sales & Customer Retention Analysis
 
-Multi-Vendor E-Commerce Performance Analysis & Customer Retention Strategy
+![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-1.5+-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![Seaborn](https://img.shields.io/badge/Seaborn-0.12+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Status](https://img.shields.io/badge/Project-Completed-brightgreen?style=for-the-badge)
 
-1. Ringkasan Eksekutif (Executive Summary)
+---
 
-Analisis ini mengolah dataset e-commerce staging sebanyak 100.000 transaksi dari 700 merchant dan 8.999 pelanggan dalam rentang waktu Maret hingga September 2026.
+## 📌 Executive Summary
 
-Tujuan utama analisis ini adalah untuk memahami pendorong utama pendapatan (Gross Merchandise Value / GMV), menilai efisiensi status pemenuhan pesanan (fulfillment), serta mengukur tingkat retensi pelanggan menggunakan metode RFM Analysis.
+Analisis ini mengolah dataset e-commerce staging sebanyak **100.000 transaksi** dari **700 merchant** dan **8.999 pelanggan** unik (periode Maret - September 2026). 
 
-2. Temuan Utama (Key Insights)
-- Total Pendapatan (GMV): Mencapai $8.032.882,17 dengan nilai transaksi berhasil (Delivered) sebesar $5.444.213,01 (68,07%).
+Tujuan utama proyek ini adalah mengevaluasi kinerja penjualan (**Gross Merchandise Value / GMV**), efisiensi pemenuhan pesanan (**fulfillment rate**), serta mengelompokkan perilaku pelanggan menggunakan metode **RFM Analysis (Recency, Frequency, Monetary)**.
 
-- Kategori Paling Cuan: Electronics ($2,01 Juta) dan Apparel & Fashion ($2,00 Juta) menyumbang lebih dari 50% dari total pendapatan.
+---
 
-- Status Pesanan (Fulfillment):
-	- Delivered: 68,07% (68.065 pesanan)
-	- Shipped: 14,04% (14.043 pesanan)
-	- Processing: 9,92% (9.921 pesanan)
-	- Cancelled (Batal): 4,97% (4.973 pesanan)
-	- Refunded (Dapat Uang Kembali): 3,00% (2.998 pesanan)
+## 📊 Key Highlights & Metrics
 
-- Opsi Biaya Pengiriman (Shipping Fee):
-	- Free Shipping ($0.00): 40,2% transaksi
-	- Standard Shipping ($4.99): 40,0% transaksi
-	- Express Shipping ($9.99): 19,8% transaksi
+| Metrik Bisnis | Nilai | Keterangan |
+| :--- | :--- | :--- |
+| **Total GMV** | **$8,032,882.17** | Total nilai transaksi kotor |
+| **Delivered GMV** | **$5,444,213.01** | Total transaksi berhasil diselesaikan (68.07%) |
+| **Total Orders** | **100,000** | Jumlah baris transaksi |
+| **Unique Customers** | **8,999** | Total pelanggan unik |
+| **Unique Merchants** | **700** | Total toko/penjual aktif |
+| **Average Order Value (AOV)** | **~$80.33** | Rata-rata pengeluaran per transaksi |
 
-- Perilaku & Loyalitas Pelanggan (RFM):
-	- Memiliki 8.999 pelanggan unik dengan repeat customer rate sebesar 100%.
-	- Rata-rata pelanggan melakukan ~11 kali transaksi dalam rentang waktu 6 bulan, dengan total nilai belanja rata-rata ~$890 USD per pelanggan.
+---
 
+## 🔍 Key Insights & Findings
 
-3. Teknologi yang Digunakan (Tech Stack)
+### 1. Revenue Drivers by Category
+* **Electronics** ($2,009,544.34) dan **Apparel & Fashion** ($2,004,865.71) merupakan pendorong utama pendapatan, menyumbang **>50% dari total GMV**.
+* Rata-rata nilai belanja (*AOV*) tergolong stabil di seluruh kategori produk (~$80 USD).
 
-Bahasa Pemrograman: Python
+### 2. Fulfillment & Order Status
+* **Delivered:** 68.07% (68,065 pesanan)
+* **Shipped:** 14.04% (14,043 pesanan)
+* **Processing:** 9.92% (9,921 pesanan)
+* **Cancelled & Refunded:** **7.97%** (7,971 pesanan gabungan) — mengindikasikan potensi kebocoran pendapatan akibat pembatalan merchant atau isu stok.
 
-Library Analisis Data: Pandas, NumPy
+### 3. Shipping Fee Breakdown
+* **Free Shipping ($0.00):** Dipilih oleh **40.2%** pelanggan.
+* **Standard Shipping ($4.99):** Dipilih oleh **40.0%** pelanggan.
+* **Express Shipping ($9.99):** Dipilih oleh **19.8%** pelanggan.
 
-Library Visualisasi: Matplotlib, Seaborn
+### 4. Customer Retention & RFM Analysis
+* **Repeat Customer Rate:** **100%** (seluruh 8.999 pelanggan melakukan transaksi lebih dari 1 kali).
+* **Frekuensi Transaksi:** Rata-rata pelanggan melakukan **~11 kali belanja** dalam rentang waktu 6 bulan.
+* **Nilai Belanja Pelanggan:** Rata-rata satu pelanggan membelanjakan total **~$890 USD**.
 
-Environment: Google Colab
+---
 
-4. Rekomendasi Bisnis Berbasis Data
-1. Tekan Angka Pembatalan (Cancellation Rate): Ada sekitar 7,97% transaksi (Cancelled + Refunded) yang bikin potensi pendapatan hilang. Bisnis perlu bikin aturan waktu proses (SLA) yang ketat buat merchant agar stok barang selalu siap dan tidak memicu pembatalan.
+## 🛠️ Tech Stack & Libraries
 
-2. Optimasi Strategi Ongkir: Karena 40,2% pembeli sangat menyukai Free Shipping, bisnis bisa bikin strategi Minimum Belanja Gratis Ongkir (misal: "Gratis Ongkir untuk Belanja di Atas $60"). Tujuannya untuk mendorong pelanggan belanja barang tambahan (Up-selling).
+- **Language:** Python 3.x
+- **Data Manipulation:** `pandas`, `numpy`
+- **Data Visualization:** `matplotlib`, `seaborn`
+- **Environment:** Google Colab / Jupyter Notebook
 
-3. Fokus Promosi pada Kategori Unggulan: Berikan promo khusus atau garansi tambahan untuk kategori Electronics dan Apparel & Fashion karena dua kategori ini adalah penyumbang cuan terbesar dengan nilai rata-rata belanja (AOV) yang tinggi (~$80 USD).
+---
+
+## 💡 Strategic Business Recommendations
+
+1. **SLA & Penalti Merchant (Menekan Cancel Rate):**
+   * Sekitar **7.97% transaksi batal/refund**. Terapkan aturan batas waktu pemrosesan (*Service Level Agreement*) serta penalti stok bagi 700 merchant untuk menekan kebocoran GMV.
+2. **Program Ambang Belanja Gratis Ongkir:**
+   * Mengingat **40.2% pembeli memilih Free Shipping**, buat strategi *Free Shipping threshold* (misal: "Gratis Ongkir untuk Belanja Minimum $60") untuk mendorong peningkatan nilai keranjang belanja (*Basket Size*).
+3. **Fokus Promosi Kategori Unggulan:**
+   * Berikan penawaran garansi ekstra atau *cross-selling* barang pendukung pada kategori **Electronics** dan **Apparel & Fashion** sebagai penyumbang cuan terbesar platform.
+
+---
+
+## 📁 Repository Structure
+
+```text
+.
+├── ecommerce_orders_staging_100k.csv    # Dataset mentah (100k rows)
+├── ecommerce_data_analysis.ipynb        # Notebook analisis data (Python)
+└── README.md                            # Laporan dokumentasi proyek
